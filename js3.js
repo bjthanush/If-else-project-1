@@ -1,17 +1,24 @@
+// JavaScript code for user registration
 function registerUser() {
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
     var password = document.getElementById('password').value;
     var role = document.getElementById('role').value;
+
+    // Simulate saving user data to a database
     var user = {
       name: name,
       email: email,
       password: password,
       role: role
     };
+
+    // Simulate the matching algorithm and redirect to the matching page
     if (role === 'consultant') {
-      window.location.href = 'consultant-matching.html';
+      // Redirect to the consultant matching page
+      window.location.href = 'html5.html';
     } else {
-      window.location.href = 'business-matching.html';
+      // Redirect to the business matching page
+      window.location.href = 'html4.html';
     }
   }
